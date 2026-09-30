@@ -1,0 +1,25 @@
+[project]
+name = "lag-tidskrift-giroer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Craftsman Digital", email = "htcjon@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastexcel>=0.21.0",
+    "polars>=1.44.2",
+    "utilities",
+    "xlsxwriter>=3.2.9",
+]
+
+[project.scripts]
+lag-tidskrift-giroer = "lag_tidskrift_giroer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+utilities = { git = "https://github.com/samfunnet/utilities.git" }

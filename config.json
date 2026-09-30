@@ -1,0 +1,14 @@
+{
+  "base_folder": "/mnt/server/system-ssd/mount/Mikaelkirken/Kommunikasjon/Tidsskriftet",
+  "download_folder": "~/syncthing/Downloads",
+  "fil_spesifikasjoner": [
+    {
+      "hint": "Export*.xlsx",
+      "file": "adresser.xlsx"
+    },
+    {
+      "hint": "Tidsskriftet*.xlsx",
+      "file": "kid.xlsx"
+    }
+  ]
+}
