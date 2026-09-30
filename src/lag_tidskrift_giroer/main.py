@@ -268,6 +268,16 @@ def steg_6_kopier_til_base_folder(periode: str, config: dict):
     else:
         print(f"  Advarsel: Fant ikke fraktbrev i assets/ ({fraktbrev_kilde.name})")
 
+    # 3. Giro-PDF inn i 'til utsending/' som 'giroer.pdf'
+    giro_pdf_kilde = OUTPUT_DIR / f"{periode}.pdf"
+    if giro_pdf_kilde.exists():
+        shutil.copy2(giro_pdf_kilde, utsending_mappe / "giroer.pdf")
+        print(
+            f"  -> Kopierte {giro_pdf_kilde.name} som giroer.pdf til 'til utsending/'"
+        )
+    else:
+        print(f"  Advarsel: Fant ikke PDF-filen: {giro_pdf_kilde}")
+
     print(f" Arkivering til base_folder fullført!")
 
 

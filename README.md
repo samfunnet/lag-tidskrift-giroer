@@ -68,6 +68,7 @@ Når terminalen melder `PROSESSEN ER FULLFØRT!`:
        ├── giro.odt
        ├── 2026-3.xlsx
        └── til utsending/
+           ├── giroer.pdf
            └── fraktbrev.pdf
    ```
 
